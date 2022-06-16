@@ -1,0 +1,12 @@
+[package]
+name = "discord-cdn-pls"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = { version = "0.11.2", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "builder", "http", "utils"] }
+tokio = { version = "1.19.1", features = ["rt-multi-thread"] }
+regex = "1.5.6"
+lazy_static = "1.4.0"
